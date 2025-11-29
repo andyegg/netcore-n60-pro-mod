@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
@@ -20,20 +20,20 @@
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 # 添加组播防火墙规则
-cat >> package/network/config/firewall/files/firewall.config <<EOF
-config rule
-        option name 'Allow-UDP-igmpproxy'
-        option src 'wan'
-        option dest 'lan'
-        option dest_ip '224.0.0.0/4'
-        option proto 'udp'
-        option target 'ACCEPT'        
-        option family 'ipv4'
+#cat >> package/network/config/firewall/files/firewall.config <<EOF
+#config rule
+#        option name 'Allow-UDP-igmpproxy'
+#        option src 'wan'
+#        option dest 'lan'
+#        option dest_ip '224.0.0.0/4'
+#        option proto 'udp'
+#        option target 'ACCEPT'        
+#        option family 'ipv4'
 
-config rule
-        option name 'Allow-UDP-udpxy'
-        option src 'wan'
-        option dest_ip '224.0.0.0/4'
-        option proto 'udp'
-        option target 'ACCEPT'
-EOF
+#config rule
+#        option name 'Allow-UDP-udpxy'
+#        option src 'wan'
+#        option dest_ip '224.0.0.0/4'
+#        option proto 'udp'
+#        option target 'ACCEPT'
+#EOF
