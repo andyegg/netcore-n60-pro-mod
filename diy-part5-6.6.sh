@@ -47,5 +47,4 @@ find ./ | grep Makefile | grep mosdns | xargs rm -f
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
-git clone https://github.com/sbwml/luci-app-airconnect/luci-app-airconnect package/luci-app-airconnect
-git clone https://github.com/sbwml/luci-app-airconnect/airconnect package/airconnect
+git clone https://github.com/sbwml/luci-app-airconnect package/luci-app-airconnect
