@@ -48,3 +48,4 @@ git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 git clone https://github.com/sbwml/luci-app-airconnect package/luci-app-airconnect
+git clone https://github.com/Tokisaki-Galaxy/luci-app-tailscale-community package/luci-app-tailscale-community
